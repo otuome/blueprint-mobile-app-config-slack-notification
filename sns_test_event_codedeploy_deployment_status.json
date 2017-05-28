@@ -1,0 +1,52 @@
+{
+  "Records": [
+    {
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "arn:aws:sns:EXAMPLE",
+      "EventSource": "aws:sns",
+      "Sns": {
+        "SignatureVersion": "1",
+        "Timestamp": "1970-01-01T00:00:00.000Z",
+        "Signature": "EXAMPLE",
+        "SigningCertUrl": "EXAMPLE",
+        "MessageId": "95df01b4-ee98-5cb9-9903-4c221d41eb5e",
+        "Message": {
+            "region": "us-west-2",
+            "accountId": "111222333444",
+            "eventTriggerName": "Sample_Mobile_Config_Deployment_Status_Trigger",
+            "applicationName": "ProductionApp-us-west-3",
+            "deploymentId": "d-75I7MBT7C",
+            "deploymentGroupName": "dep-group-def-456",
+            "createTime": "1446744188.595",
+            "completeTime": "1446744190.402",
+            "deploymentOverview": {
+                "Failed": "10",
+                "InProgress": "0",
+                "Pending": "0",
+                "Skipped": "0",
+                "Succeeded": "0"
+            },
+            "status": "Failed",
+            "errorInformation": {
+                "ErrorCode": "IAM_ROLE_MISSING",
+                "ErrorMessage": "IAM Role is missing for deployment group: dep-group-def-456"
+            }
+        },
+        "MessageAttributes": {
+          "Test": {
+            "Type": "String",
+            "Value": "TestString"
+          },
+          "TestBinary": {
+            "Type": "Binary",
+            "Value": "TestBinary"
+          }
+        },
+        "Type": "Notification",
+        "UnsubscribeUrl": "EXAMPLE",
+        "TopicArn": "arn:aws:sns:EXAMPLE",
+        "Subject": "Sample Mobile Config Deployment Status"
+      }
+    }
+  ]
+}
